@@ -1,0 +1,794 @@
+@import "tailwindcss";
+
+/* Plus Jakarta Sans Font Face Definitions */
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@layer base {
+  *, ::after, ::before, ::backdrop {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.4);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 116, 139, 0.6);
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  header, nav, button:not(#btn-print-receipt), .print\:hidden {
+    display: none !important;
+  }
+}
+
+/* =========================       LOGIN WRAPPER========================= */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #e8e8e8;
+}
+
+/* =========================      FLIP PERSPECTIVE========================= */
+.flip-scene {
+    width: 520px;
+    height: 520px;
+    perspective: 1800px;
+}
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform .9s cubic-bezier(.22,1,.36,1);
+    transform-style: preserve-3d;
+}
+.flip-scene.flipped .flip-card {
+    transform: rotateY(180deg);
+}
+
+/* =========================      NEUMORPHIC CIRCLE (shared by both faces)========================= */
+.glass-circle {
+    position: absolute;
+    inset: 0;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8e8e8;
+    box-shadow:
+        -22px -22px 44px #ffffff,
+        22px 22px 50px #c3c3c3,
+        -1px -1px 1px rgba(255,255,255,.5) inset;
+    z-index: 5;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.glass-circle.back {
+    transform: rotateY(180deg);
+}
+
+/* =========================       INNER RING========================= */
+.glass-circle::before {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow:
+        inset 3px 3px 9px rgba(163, 163, 163, 0.18),
+        inset -3px -3px 9px rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+}
+
+/* =========================        LOGIN / SIGNUP FORM========================= */
+.login-form {
+    position: relative;
+    width: 290px;
+    z-index: 10;
+}
+
+/* =========================          TITLE========================= */
+.login-form h1 {
+    color: #4a4a4a;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin-bottom: 4px;
+    text-align: center;
+    text-shadow:
+        1px 1px 1px rgba(255, 255, 255, 0.9),
+        -2px -2px 1px rgba(163, 163, 163, 0.25);
+}
+.login-form .subtitle {
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    margin-bottom: 28px;
+}
+
+/* =========================        INPUT BOX========================= */
+.input-box {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+/* =========================          ICON========================= */
+.input-box i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #909090;
+    font-size: 15px;
+    z-index: 2;
+    transition: color .35s ease;
+}
+
+/* =========================          INPUT========================= */
+.input-box input {
+    width: 100%;
+    height: 46px;
+    padding: 0 18px 0 45px;
+    border: none;
+    outline: none;
+    background: #e8e8e8;
+    color: #4a4a4a;
+    font-family: inherit;
+    font-size: 14.5px;
+    font-weight: 500;
+    letter-spacing: .2px;
+    border-radius: 12px;
+    box-shadow:
+        inset -6px -6px 10px rgba(255,255,255,.95),
+        inset 6px 6px 10px rgba(184,190,204,.45);
+    transition: box-shadow .4s cubic-bezier(.22,1,.36,1), transform .4s cubic-bezier(.22,1,.36,1);
+}
+
+/* =========================       PLACEHOLDER========================= */
+.input-box input::placeholder {
+    color: #a3a3a3;
+    font-weight: 400;
+}
+
+/* =========================       FOCUS========================= */
+.input-box input:focus {
+    transform: translateY(-2px);
+    box-shadow:
+        inset 3px 3px 6px rgba(120,10,10,.35),
+        inset -3px -3px 6px rgba(212, 55, 55, 0.25);
+}
+.input-box input:focus + i,
+.input-box:focus-within i {
+    color: #a10f0f;
+}
+
+/* =========================       FORGOT PASSWORD / REMEMBER========================= */
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1px;
+    margin-bottom: 30px;
+}
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #929191;
+}
+
+/* tiny neumorphic toggle */
+.switch {
+    position: relative;
+    width: 32px;
+    height: 18px;
+    border-radius: 20px;
+    background: #e8e8e8;
+    box-shadow:
+        inset 3px 3px 6px rgba(184,190,204,.5),
+        inset -3px -3px 6px rgba(255,255,255,.9);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.switch::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #e8e8e8;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+    transition: left .25s ease, background .25s ease;
+}
+.switch.on {
+    box-shadow:
+        inset 3px 3px 6px rgba(120,10,10,.35),
+        inset -3px -3px 6px rgba(212,175,55,.25);
+}
+.switch.on::after {
+    left: 16px;
+    background: #a10f0f;
+}
+.forgot a {
+    font-size: 12px;
+    color: #929191;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+.forgot a:hover {
+    color: #a10f0f;
+}
+
+/* =========================          BUTTON========================= */
+.login-form button {
+    position: relative;
+    width: 290px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15.5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #838383;
+    background: #e8e8e8;
+    box-shadow:
+        -7px -7px 12px #f8f8f8,
+        7px 7px 12px #c8c8c8;
+    transition: color .4s ease, background .4s ease, box-shadow .4s ease, transform .25s ease;
+}
+.login-form button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(115deg, transparent, rgba(255,255,255,.55), transparent);
+    transform: skewX(-20deg);
+    transition: left .6s ease;
+}
+.login-form button:hover::before {
+    left: 130%;
+}
+.login-form button:hover {
+    transform: translateY(-2px);
+    color: #f5e9c8;
+    background: linear-gradient(155deg, #b21414 0%, #7c0d0d 100%);
+    box-shadow:
+        0 10px 22px rgba(120, 10, 10, 0.35),
+        -5px -5px 15px rgba(255, 255, 255, 0.6),
+        inset 0 1px 1px rgba(255,255,255,.25);
+}
+.login-form button:active {
+    transform: translateY(0) scale(0.97);
+    box-shadow:
+        inset 5px 5px 10px rgba(60, 5, 5, 0.4),
+        inset -5px -5px 10px rgba(212, 175, 55, 0.2);
+}
+.login-form .signup-text {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 12px;
+    color: #9a9a9a;
+}
+.login-form .signup-text a {
+    color: #a10f0f;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .flip-scene { width: 390px; height: 390px; }
+    .glass-circle { width: 390px; height: 390px; }
+    .login-form { width: 220px; }
+    .login-form h1 { font-size: 34px; }
+    .login-form .subtitle { margin-bottom: 20px; }
+    .input-box { margin-bottom: 14px; }
+    .input-box input { height: 42px; font-size: 13px; padding-left: 40px; }
+    .input-box i { left: 14px; font-size: 14px; }
+    .forgot { margin-bottom: 22px; }
+    .forgot a { font-size: 11px; }
+    .login-form button { width: 215px; height: 44px; font-size: 13.5px; }
+}
+@media (max-width: 420px) {
+    .flip-scene { width: 330px; height: 330px; }
+    .glass-circle { width: 330px; height: 330px; }
+    .login-form { width: 185px; }
+    .login-form h1 { font-size: 27px; }
+    .login-form .subtitle { font-size: 11px; margin-bottom: 16px; }
+    .input-box { margin-bottom: 12px; }
+    .input-box input { height: 38px; font-size: 11px; padding-left: 34px; }
+    .input-box i { left: 11px; font-size: 12px; }
+    .forgot { margin-bottom: 18px; }
+    .forgot a { font-size: 9px; }
+    .login-form button { width: 180px; height: 40px; font-size: 12px; border-radius: 10px; }
+}
+
+/* =========================================
+   ENTRANCE & HERO ANIMATIONS (SINISTRON.IA)
+========================================= */
+@keyframes sinistronSpinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sinistronSpinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes floatGentleAlt {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-1.5deg);
+  }
+}
+
+@keyframes pulseGlowSlow {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes borderRotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+@keyframes shimmerGlow {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.sinistron-spin-slow {
+  animation: sinistronSpinSlow 22s linear infinite;
+}
+
+.sinistron-spin-reverse-slow {
+  animation: sinistronSpinReverse 28s linear infinite;
+}
+
+.sinistron-float {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+.sinistron-float-alt {
+  animation: floatGentleAlt 7s ease-in-out infinite;
+}
+
+.sinistron-pulse-glow {
+  animation: pulseGlowSlow 4s ease-in-out infinite;
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #e879f9 0%, #ffffff 50%, #818cf8 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmerGlow 4s linear infinite;
+}
+
+/* =========================================
+   TEMA EXCLUSIVO: PRETO & ROXO ESCURO
+========================================= */
+:root,
+html,
+body {
+  color-scheme: dark !important;
+  background-color: #06030c !important;
+  color: #f3e8ff !important;
+}
+
+body {
+  background-color: #06030c !important;
+  background-image: 
+    radial-gradient(ellipse 90% 60% at 50% -15%, rgba(147, 51, 234, 0.22), transparent 75%),
+    radial-gradient(ellipse 60% 40% at 95% 95%, rgba(126, 34, 206, 0.15), transparent 60%),
+    radial-gradient(circle at 5% 75%, rgba(88, 28, 135, 0.12), transparent 50%) !important;
+  background-attachment: fixed !important;
+}
+
+/* Força fundos escuros e roxos profundos em painéis, cards e containers */
+.bg-slate-950,
+.bg-slate-900,
+.bg-\[\#131722\],
+.bg-\[\#1b2230\],
+.bg-\[\#161b22\],
+.bg-\[\#0d1117\],
+.bg-\[\#0b0f15\] {
+  background-color: #0f071d !important;
+  border-color: rgba(168, 85, 247, 0.22) !important;
+}
+
+/* Modais e cartões brancos herdados convertidos para preto e roxo escuro */
+.bg-white:not(.print\:bg-white) {
+  background-color: #120924 !important;
+  color: #f5f3ff !important;
+  border-color: rgba(168, 85, 247, 0.25) !important;
+}
+
+.bg-slate-50,
+.bg-slate-100 {
+  background-color: #160c2e !important;
+  color: #f5f3ff !important;
+}
+
+.bg-slate-200 {
+  background-color: #1f103d !important;
+}
+
+.bg-slate-800,
+.bg-slate-800\/80,
+.bg-slate-800\/60,
+.bg-slate-800\/50 {
+  background-color: #1a0f35 !important;
+  border-color: rgba(168, 85, 247, 0.25) !important;
+}
+
+.hover\:bg-slate-800:hover,
+.hover\:bg-slate-700:hover {
+  background-color: #241448 !important;
+}
+
+/* Bordas em tons de roxo escuro elegante */
+.border-slate-800,
+.border-slate-800\/80,
+.border-slate-800\/60,
+.border-slate-700,
+.border-slate-700\/60,
+.border-slate-200 {
+  border-color: rgba(168, 85, 247, 0.2) !important;
+}
+
+/* Textos e contrastes do tema roxo escuro */
+.text-slate-900,
+.text-slate-800 {
+  color: #faf5ff !important;
+}
+
+.text-slate-700,
+.text-slate-600 {
+  color: #e9d5ff !important;
+}
+
+.text-slate-400 {
+  color: #a89bc2 !important;
+}
+
+.text-slate-500 {
+  color: #9482b5 !important;
+}
+
+/* Inputs, selects e textareas estilizados em roxo escuro com brilho neon */
+input,
+select,
+textarea {
+  background-color: #130a27 !important;
+  color: #f8fafc !important;
+  border-color: rgba(168, 85, 247, 0.35) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #c084fc !important;
+  box-shadow: 0 0 0 2px rgba(192, 132, 252, 0.25) !important;
+}
+
+/* Destaques de botões em gradiente roxo e violeta */
+.bg-indigo-600,
+.bg-indigo-500 {
+  background: linear-gradient(135deg, #9333ea, #7928ca) !important;
+}
+
+.hover\:bg-indigo-500:hover,
+.hover\:bg-indigo-700:hover {
+  background: linear-gradient(135deg, #a855f7, #9333ea) !important;
+}
+
+/* Scrollbars com tom de roxo */
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.45) !important;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 132, 252, 0.75) !important;
+}
+
+

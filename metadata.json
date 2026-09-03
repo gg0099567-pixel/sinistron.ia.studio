@@ -1,0 +1,8 @@
+{
+  "name": "Remix Sistema de Vendas e Cálculos",
+  "description": "Sistema completo de controle comercial, ponto de venda (PDV), cálculo e formação de preços, markup, controle de estoque, orçamentos e fluxo financeiro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
